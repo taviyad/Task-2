@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CALCULATOR</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="head"><h1>CALCULATOR</h1></div>
+    <div class="container">
+        <div class="head1">
+            <form name="solve">
+                <input type="text" name="display" readonly>
+                <br><br>
+                <input type="button" value="C" onclick="solve.display.value=''">
+                <input type="button" value="DEL" onclick="solve.display.value=''">
+                <input type="button" value="." onclick="solve.display.value+='.'">
+                <input type="button" value="/" onclick="solve.display.value+='/'">
+                <br><br>
+                <input type="button" value="9" onclick="solve.display.value+='9'">
+                <input type="button" value="8" onclick="solve.display.value+='8'">
+                <input type="button" value="7" onclick="solve.display.value+='7'">
+                <input type="button" value="+" onclick="solve.display.value+='+'">
+                <br><br>
+                <input type="button" value="6" onclick="solve.display.value+='6'">
+                <input type="button" value="5" onclick="solve.display.value+='5'">
+                <input type="button" value="4" onclick="solve.display.value+='4'">
+                <input type="button" value="-" onclick="solve.display.value+='-'">
+                <br><br>
+                <input type="button" value="3" onclick="solve.display.value+='3'">
+                <input type="button" value="2" onclick="solve.display.value+='2'">
+                <input type="button" value="1" onclick="solve.display.value+='1'">
+                <input type="button" value="*" onclick="solve.display.value+='*'">
+                <br><br>
+                <input type="button" value="000" onclick="solve.display.value+='000'">
+                <input type="button" value="00" onclick="solve.display.value+='00'">
+                <input type="button" value="0" onclick="solve.display.value+='0'">
+                <input type="button" value="=" onclick="solve.display.value=eval(solve.display.value)">
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>
